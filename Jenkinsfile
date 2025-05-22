@@ -46,8 +46,8 @@ pipeline {
     stage('Release') {
       steps {
         echo 'Creating release tag...'
-          bat git config --global user.email "abubttalw@gmail.com"
-          bat git config --global user.name "Wael Alahamdi"
+          bat 'git config --global user.email "abubttalw@gmail.com"'
+          bat 'git config --global user.name "Wael Alahamdi"'
           bat 'git tag -a v1.0 -m "First release"'
           bat 'git push origin v1.0'
       }
