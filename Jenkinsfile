@@ -49,7 +49,7 @@ pipeline {
         bat 'git config --global user.email "abubttalw@gmail.com"'
         bat 'git config --global user.name "Wael Alahamdi"'
         bat 'if exist .git\\refs\\tags\\v1.3 (echo Tag v1.3 exists) else git tag -a v1.3 -m "Final release"'
-        bat 'git push origin v1.3 || echo Tag already pushed"'
+        bat 'echo Skipping git push to avoid authentication hang'
       }
     }
 
