@@ -18,7 +18,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Running tests...'
-        bat 'pytest kpi_test_app.py'
+        bat "docker run --rm -v %cd%:/app -w /app kpi-app pytest kpi_test_app.py"
       }
     }
 
