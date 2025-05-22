@@ -48,8 +48,8 @@ pipeline {
         echo 'Creating release tag...'
         bat 'git config --global user.email "abubttalw@gmail.com"'
         bat 'git config --global user.name "Wael Alahamdi"'
-        bat 'git tag -a v1.3 -m "Final release"'
-        bat 'git push origin v1.3'
+        bat 'git tag -a v1.3 -m "Final release" || echo Tag already exists"'
+        bat 'git push origin v1.3 || echo Tag already pushed"'
       }
     }
 
