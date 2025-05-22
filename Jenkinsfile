@@ -38,8 +38,8 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Deploying container...'
-          bat docker rm -f $CONTAINER_NAME || true
-          bat docker run -d -p 5000:5000 --name $CONTAINER_NAME $IMAGE_NAME
+          bat "docker rm -f %CONTAINER_NAME%"
+          bat "docker run -d -p 5000:5000 --name %CONTAINER_NAME% %IMAGE_NAME%"
       }
     }
 
