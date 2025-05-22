@@ -2,13 +2,29 @@
   "school1": [
     {
       "date": "2025-05-22",
-      "total": 12,
-      "absent": 1
-    },
-    {
-      "date": "2025-05-22",
       "total": 22,
       "absent": 2
+    }
+  ],
+  "alfarabi": [
+    {
+      "date": "2025-05-23",
+      "total": 55,
+      "absent": 11
+    }
+  ],
+  "ibnsina": [
+    {
+      "date": "2025-05-23",
+      "total": 44,
+      "absent": 4
+    }
+  ],
+  "almadina": [
+    {
+      "date": "2025-05-23",
+      "total": 88,
+      "absent": 8
     }
   ]
 }

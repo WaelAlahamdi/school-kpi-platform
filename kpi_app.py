@@ -3,8 +3,8 @@ import json
 import os
 from datetime import datetime
 
-app = Flask(__name__)
-app.secret_key = 'your_secret_key_here'
+app = Flask(__name__, template_folder='schoolpage')
+app.secret_key = 'u93@F82!m9_sK48aLx7z'
 
 # Load users from JSON file
 def load_users():
@@ -38,7 +38,7 @@ def login():
             return render_template('login.html', error='Invalid credentials')
     return render_template('login.html')
 
-@app.route('/school/dashboard', methods=['GET', 'POST'])
+@app.route('/school_dashboard', methods=['GET', 'POST'])
 def school_dashboard():
     if 'user' not in session or session.get('role') != 'school':
         return redirect(url_for('login'))
@@ -72,7 +72,7 @@ def school_dashboard():
 
     return render_template('school_dashboard.html', school=school_name)
 
-@app.route('/school/report')
+@app.route('/school_report')
 def school_report():
     if 'user' not in session or session.get('role') != 'school':
         return redirect(url_for('login'))
