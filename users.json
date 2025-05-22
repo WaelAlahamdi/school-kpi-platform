@@ -1,0 +1,5 @@
+{
+  "school1": { "password": "pass123", "role": "school" },
+  "school2": { "password": "pass456", "role": "school" },
+  "admin": { "password": "admin123", "role": "admin" }
+}

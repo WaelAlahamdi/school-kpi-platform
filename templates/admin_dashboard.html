@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin Dashboard</title></head>
+<body>
+  <h2>Admin Dashboard - School Attendance Summary</h2>
+  <table border="1">
+    <tr><th>School</th><th>Days Reported</th><th>Avg Absence (%)</th></tr>
+    {% for s in summary %}
+    <tr><td>{{ s.school }}</td><td>{{ s.days }}</td><td>{{ s.avg_absence }}%</td></tr>
+    {% endfor %}
+  </table>
+  <br><a href="/logout">Logout</a>
+</body>
+</html>

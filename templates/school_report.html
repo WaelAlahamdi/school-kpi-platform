@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>School Report</title></head>
+<body>
+  <h2>Attendance Report for {{ school }}</h2>
+  <table border="1">
+    <tr><th>Date</th><th>Total Students</th><th>Absent</th></tr>
+    {% for r in records %}
+    <tr><td>{{ r.date }}</td><td>{{ r.total }}</td><td>{{ r.absent }}</td></tr>
+    {% endfor %}
+  </table>
+  <a href="/school/dashboard">Back</a>
+  <br><a href="/logout">Logout</a>
+</body>
+</html>
