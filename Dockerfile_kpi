@@ -1,20 +1,22 @@
-# Dockerfile_kpi — for School KPI Flask App
+# Dockerfile_kpi
+# Prepared by: Wael Alahamdi
+# Purpose: Build and run the School KPI Platform Flask App
 
-# 1. Use official Python image
+# Step 1: Base image
 FROM python:3.9-slim
 
-# 2. Set the working directory inside the container
+# Step 2: Set working directory
 WORKDIR /app
 
-# 3. Copy requirements and install dependencies
+# Step 3: Install dependencies
 COPY requirements_kpi.txt .
 RUN pip install --no-cache-dir -r requirements_kpi.txt
 
-# 4. Copy the rest of the app code
+# Step 4: Copy application code
 COPY . .
 
-# 5. Expose port Flask runs on
+# Step 5: Expose Flask app port
 EXPOSE 5000
 
-# 6. Start the Flask app
+# Step 6: Run the Flask app
 CMD ["python", "kpi_app.py"]
