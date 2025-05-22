@@ -1,8 +1,0 @@
-{
-  "city": "Jeddah",
-  "schools": [
-    { "name": "Al-Farabi Secondary School", "attendance": 0.93, "results": 0.88 },
-    { "name": "Ibn Sina Intermediate School", "attendance": 0.90, "results": 0.84 },
-    { "name": "Rawdat Al-Ma'arifa Primary School", "attendance": 0.94, "results": 0.91 }
-  ]
-}

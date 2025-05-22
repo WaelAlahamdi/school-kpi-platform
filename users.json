@@ -1,5 +1,31 @@
 {
-  "school1": { "password": "pass123", "role": "school" },
-  "school2": { "password": "pass456", "role": "school" },
-  "admin": { "password": "admin123", "role": "admin" }
+  "alfarabi": {
+    "password": "1234",
+    "role": "school",
+    "school_name": "Al-Farabi Secondary School"
+  },
+  "ibnsina": {
+    "password": "5678",
+    "role": "school",
+    "school_name": "Ibn Sina Intermediate School"
+  },
+  "rawdat": {
+    "password": "91011",
+    "role": "school",
+    "school_name": "Rawdat Al-Ma'arifa Primary School"
+  },
+  "alkhwarizmi": {
+    "password": "1122",
+    "role": "school",
+    "school_name": "Al-Khwarizmi Technical School"
+  },
+  "almadina": {
+    "password": "3344",
+    "role": "school",
+    "school_name": "Al-Madina High School"
+  },
+  "admin": {
+    "password": "admin123",
+    "role": "admin"
+  }
 }
